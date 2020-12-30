@@ -9,12 +9,15 @@
 /* Begin PBXBuildFile section */
 		F0696FA4259CF262005B8AC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0696FA3259CF262005B8AC6 /* AppDelegate.swift */; };
 		F0696FA6259CF262005B8AC6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0696FA5259CF262005B8AC6 /* SceneDelegate.swift */; };
-		F0696FA8259CF262005B8AC6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0696FA7259CF262005B8AC6 /* ViewController.swift */; };
+		F0696FA8259CF262005B8AC6 /* FilmListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0696FA7259CF262005B8AC6 /* FilmListViewController.swift */; };
 		F0696FAB259CF262005B8AC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0696FA9259CF262005B8AC6 /* Main.storyboard */; };
 		F0696FAD259CF263005B8AC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0696FAC259CF263005B8AC6 /* Assets.xcassets */; };
 		F0696FB0259CF263005B8AC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0696FAE259CF263005B8AC6 /* LaunchScreen.storyboard */; };
 		F0696FBF259CF71C005B8AC6 /* FilmDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0696FBE259CF71C005B8AC6 /* FilmDetailsModel.swift */; };
 		F0696FC2259CF77E005B8AC6 /* FilmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0696FC1259CF77E005B8AC6 /* FilmModel.swift */; };
+		F0696FCC259D08B4005B8AC6 /* WebserviceClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0696FCB259D08B4005B8AC6 /* WebserviceClass.swift */; };
+		F0696FD2259D0EFD005B8AC6 /* FilmCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0696FD1259D0EFD005B8AC6 /* FilmCollectionViewCell.swift */; };
+		F0696FD6259D1A0D005B8AC6 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0696FD5259D1A0D005B8AC6 /* UIView+Extension.swift */; };
 		FC52D77F62242B545E270E22 /* Pods_mavfilms.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0077835E9586AACB60222EC /* Pods_mavfilms.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,13 +28,16 @@
 		F0696FA0259CF262005B8AC6 /* mavfilms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mavfilms.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0696FA3259CF262005B8AC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F0696FA5259CF262005B8AC6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F0696FA7259CF262005B8AC6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F0696FA7259CF262005B8AC6 /* FilmListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmListViewController.swift; sourceTree = "<group>"; };
 		F0696FAA259CF262005B8AC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F0696FAC259CF263005B8AC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0696FAF259CF263005B8AC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F0696FB1259CF263005B8AC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0696FBE259CF71C005B8AC6 /* FilmDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDetailsModel.swift; sourceTree = "<group>"; };
 		F0696FC1259CF77E005B8AC6 /* FilmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmModel.swift; sourceTree = "<group>"; };
+		F0696FCB259D08B4005B8AC6 /* WebserviceClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebserviceClass.swift; sourceTree = "<group>"; };
+		F0696FD1259D0EFD005B8AC6 /* FilmCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmCollectionViewCell.swift; sourceTree = "<group>"; };
+		F0696FD5259D1A0D005B8AC6 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,15 +82,18 @@
 		F0696FA2259CF262005B8AC6 /* mavfilms */ = {
 			isa = PBXGroup;
 			children = (
+				F0696FCB259D08B4005B8AC6 /* WebserviceClass.swift */,
 				F0696FA3259CF262005B8AC6 /* AppDelegate.swift */,
 				F0696FA5259CF262005B8AC6 /* SceneDelegate.swift */,
-				F0696FA7259CF262005B8AC6 /* ViewController.swift */,
+				F0696FA7259CF262005B8AC6 /* FilmListViewController.swift */,
+				F0696FD1259D0EFD005B8AC6 /* FilmCollectionViewCell.swift */,
 				F0696FA9259CF262005B8AC6 /* Main.storyboard */,
 				F0696FAC259CF263005B8AC6 /* Assets.xcassets */,
 				F0696FAE259CF263005B8AC6 /* LaunchScreen.storyboard */,
 				F0696FB1259CF263005B8AC6 /* Info.plist */,
 				F0696FBE259CF71C005B8AC6 /* FilmDetailsModel.swift */,
 				F0696FC1259CF77E005B8AC6 /* FilmModel.swift */,
+				F0696FD5259D1A0D005B8AC6 /* UIView+Extension.swift */,
 			);
 			path = mavfilms;
 			sourceTree = "<group>";
@@ -212,7 +221,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0696FBF259CF71C005B8AC6 /* FilmDetailsModel.swift in Sources */,
-				F0696FA8259CF262005B8AC6 /* ViewController.swift in Sources */,
+				F0696FD2259D0EFD005B8AC6 /* FilmCollectionViewCell.swift in Sources */,
+				F0696FD6259D1A0D005B8AC6 /* UIView+Extension.swift in Sources */,
+				F0696FCC259D08B4005B8AC6 /* WebserviceClass.swift in Sources */,
+				F0696FA8259CF262005B8AC6 /* FilmListViewController.swift in Sources */,
 				F0696FC2259CF77E005B8AC6 /* FilmModel.swift in Sources */,
 				F0696FA4259CF262005B8AC6 /* AppDelegate.swift in Sources */,
 				F0696FA6259CF262005B8AC6 /* SceneDelegate.swift in Sources */,
