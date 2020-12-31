@@ -18,6 +18,7 @@
 		F0696FCC259D08B4005B8AC6 /* WebserviceClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0696FCB259D08B4005B8AC6 /* WebserviceClass.swift */; };
 		F0696FD2259D0EFD005B8AC6 /* FilmCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0696FD1259D0EFD005B8AC6 /* FilmCollectionViewCell.swift */; };
 		F0696FD6259D1A0D005B8AC6 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0696FD5259D1A0D005B8AC6 /* UIView+Extension.swift */; };
+		F06A14AB259D86340019892A /* FilmDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06A14AA259D86340019892A /* FilmDetailsViewController.swift */; };
 		FC52D77F62242B545E270E22 /* Pods_mavfilms.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0077835E9586AACB60222EC /* Pods_mavfilms.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,7 @@
 		F0696FCB259D08B4005B8AC6 /* WebserviceClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebserviceClass.swift; sourceTree = "<group>"; };
 		F0696FD1259D0EFD005B8AC6 /* FilmCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmCollectionViewCell.swift; sourceTree = "<group>"; };
 		F0696FD5259D1A0D005B8AC6 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		F06A14AA259D86340019892A /* FilmDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,20 +84,29 @@
 		F0696FA2259CF262005B8AC6 /* mavfilms */ = {
 			isa = PBXGroup;
 			children = (
+				F0696FEB259D2856005B8AC6 /* Model */,
 				F0696FCB259D08B4005B8AC6 /* WebserviceClass.swift */,
 				F0696FA3259CF262005B8AC6 /* AppDelegate.swift */,
 				F0696FA5259CF262005B8AC6 /* SceneDelegate.swift */,
 				F0696FA7259CF262005B8AC6 /* FilmListViewController.swift */,
+				F06A14AA259D86340019892A /* FilmDetailsViewController.swift */,
 				F0696FD1259D0EFD005B8AC6 /* FilmCollectionViewCell.swift */,
 				F0696FA9259CF262005B8AC6 /* Main.storyboard */,
 				F0696FAC259CF263005B8AC6 /* Assets.xcassets */,
 				F0696FAE259CF263005B8AC6 /* LaunchScreen.storyboard */,
 				F0696FB1259CF263005B8AC6 /* Info.plist */,
-				F0696FBE259CF71C005B8AC6 /* FilmDetailsModel.swift */,
-				F0696FC1259CF77E005B8AC6 /* FilmModel.swift */,
 				F0696FD5259D1A0D005B8AC6 /* UIView+Extension.swift */,
 			);
 			path = mavfilms;
+			sourceTree = "<group>";
+		};
+		F0696FEB259D2856005B8AC6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F0696FC1259CF77E005B8AC6 /* FilmModel.swift */,
+				F0696FBE259CF71C005B8AC6 /* FilmDetailsModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		F6603313D37875929FEFC371 /* Frameworks */ = {
@@ -223,6 +234,7 @@
 				F0696FBF259CF71C005B8AC6 /* FilmDetailsModel.swift in Sources */,
 				F0696FD2259D0EFD005B8AC6 /* FilmCollectionViewCell.swift in Sources */,
 				F0696FD6259D1A0D005B8AC6 /* UIView+Extension.swift in Sources */,
+				F06A14AB259D86340019892A /* FilmDetailsViewController.swift in Sources */,
 				F0696FCC259D08B4005B8AC6 /* WebserviceClass.swift in Sources */,
 				F0696FA8259CF262005B8AC6 /* FilmListViewController.swift in Sources */,
 				F0696FC2259CF77E005B8AC6 /* FilmModel.swift in Sources */,

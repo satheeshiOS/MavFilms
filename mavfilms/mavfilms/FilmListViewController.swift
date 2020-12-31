@@ -55,10 +55,9 @@ class FilmListViewController: UIViewController {
         
         MBProgressHUD.showAdded(to: KeyWindow.windowView!, animated: true)
         
-        WebserviceClass.sharedAPI.performRequest(type: FilmModel.self, urlString: ApiEndPoint.FilmList.rawValue + search, methodType:  HTTPMethod.get, success: { (response) in
-            print(response)
-            self.filmModel = response
-            self.collectionView.reloadData()
+        WebserviceClass.sharedAPI.performRequest(type: FilmModel.self, urlString: ApiEndPoint.FilmList.rawValue + search, methodType:  HTTPMethod.get, success: { [weak self] (response) in
+            self?.filmModel = response
+            self?.collectionView.reloadData()
             MBProgressHUD.hide(for: KeyWindow.windowView!, animated: true)
         
         }) { (response) in
@@ -88,10 +87,20 @@ extension FilmListViewController: UICollectionViewDelegate, UICollectionViewData
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FilmCollectionViewCell", for: indexPath) as? FilmCollectionViewCell
         if let movieData = self.filmModel?.search?[indexPath.row] {
             let image = URL(string: movieData.poster ?? "")!
-            cell?.movieImageView.af.setImage(withURL: image, placeholderImage: nil)
+            cell?.movieImageView.af.setImage(withURL: image, placeholderImage: #imageLiteral(resourceName: "Placeholder"))
             cell?.movieTitleLable.text = movieData.title ?? ""
         }
         return cell ?? UICollectionViewCell()
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        if let searchFilm = self.filmModel?.search?[indexPath.row] {
+            let filmDetailsViewController = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "FilmDetailsViewController") as? FilmDetailsViewController
+            filmDetailsViewController?.searchedFilm = searchFilm
+            self.navigationController?.pushViewController(filmDetailsViewController!, animated: true)
+        }
+        
     }
     
     
