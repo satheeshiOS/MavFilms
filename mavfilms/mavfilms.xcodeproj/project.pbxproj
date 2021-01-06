@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F05FE72A25A55C0B0031F8E8 /* mavfilmsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05FE72925A55C0B0031F8E8 /* mavfilmsTests.swift */; };
+		F05FE73425A55D3C0031F8E8 /* FilmListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05FE73325A55D3C0031F8E8 /* FilmListViewControllerTests.swift */; };
+		F05FE73E25A563B20031F8E8 /* FilmDetailsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05FE73D25A563B20031F8E8 /* FilmDetailsViewControllerTests.swift */; };
+		F05FE74325A567B20031F8E8 /* MockFilmData.json in Resources */ = {isa = PBXBuildFile; fileRef = F05FE73725A561440031F8E8 /* MockFilmData.json */; };
+		F05FE74825A567B50031F8E8 /* MockFilmData.json in Resources */ = {isa = PBXBuildFile; fileRef = F05FE73725A561440031F8E8 /* MockFilmData.json */; };
+		F05FE74C25A5689A0031F8E8 /* MockFilmDetails.json in Resources */ = {isa = PBXBuildFile; fileRef = F05FE74B25A5689A0031F8E8 /* MockFilmDetails.json */; };
+		F05FE74D25A5689A0031F8E8 /* MockFilmDetails.json in Resources */ = {isa = PBXBuildFile; fileRef = F05FE74B25A5689A0031F8E8 /* MockFilmDetails.json */; };
+		F05FE75525A5692B0031F8E8 /* WebserviceClassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05FE75425A5692B0031F8E8 /* WebserviceClassTests.swift */; };
 		F0696FA4259CF262005B8AC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0696FA3259CF262005B8AC6 /* AppDelegate.swift */; };
 		F0696FA6259CF262005B8AC6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0696FA5259CF262005B8AC6 /* SceneDelegate.swift */; };
 		F0696FA8259CF262005B8AC6 /* FilmListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0696FA7259CF262005B8AC6 /* FilmListViewController.swift */; };
@@ -22,10 +30,28 @@
 		FC52D77F62242B545E270E22 /* Pods_mavfilms.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0077835E9586AACB60222EC /* Pods_mavfilms.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		F05FE72C25A55C0B0031F8E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F0696F98259CF262005B8AC6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F0696F9F259CF262005B8AC6;
+			remoteInfo = mavfilms;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		C0077835E9586AACB60222EC /* Pods_mavfilms.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mavfilms.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D156F02107D78713BD725D31 /* Pods-mavfilms.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mavfilms.release.xcconfig"; path = "Target Support Files/Pods-mavfilms/Pods-mavfilms.release.xcconfig"; sourceTree = "<group>"; };
 		DAB57A08C83BBA8DCA659A67 /* Pods-mavfilms.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mavfilms.debug.xcconfig"; path = "Target Support Files/Pods-mavfilms/Pods-mavfilms.debug.xcconfig"; sourceTree = "<group>"; };
+		F05FE72725A55C0B0031F8E8 /* mavfilmsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mavfilmsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F05FE72925A55C0B0031F8E8 /* mavfilmsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mavfilmsTests.swift; sourceTree = "<group>"; };
+		F05FE72B25A55C0B0031F8E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F05FE73325A55D3C0031F8E8 /* FilmListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmListViewControllerTests.swift; sourceTree = "<group>"; };
+		F05FE73725A561440031F8E8 /* MockFilmData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockFilmData.json; sourceTree = "<group>"; };
+		F05FE73D25A563B20031F8E8 /* FilmDetailsViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDetailsViewControllerTests.swift; sourceTree = "<group>"; };
+		F05FE74B25A5689A0031F8E8 /* MockFilmDetails.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MockFilmDetails.json; sourceTree = "<group>"; };
+		F05FE75425A5692B0031F8E8 /* WebserviceClassTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebserviceClassTests.swift; sourceTree = "<group>"; };
 		F0696FA0259CF262005B8AC6 /* mavfilms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mavfilms.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0696FA3259CF262005B8AC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F0696FA5259CF262005B8AC6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +69,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F05FE72425A55C0B0031F8E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F0696F9D259CF262005B8AC6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -63,10 +96,23 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		F05FE72825A55C0B0031F8E8 /* mavfilmsTests */ = {
+			isa = PBXGroup;
+			children = (
+				F05FE72925A55C0B0031F8E8 /* mavfilmsTests.swift */,
+				F05FE73325A55D3C0031F8E8 /* FilmListViewControllerTests.swift */,
+				F05FE73D25A563B20031F8E8 /* FilmDetailsViewControllerTests.swift */,
+				F05FE75425A5692B0031F8E8 /* WebserviceClassTests.swift */,
+				F05FE72B25A55C0B0031F8E8 /* Info.plist */,
+			);
+			path = mavfilmsTests;
+			sourceTree = "<group>";
+		};
 		F0696F97259CF262005B8AC6 = {
 			isa = PBXGroup;
 			children = (
 				F0696FA2259CF262005B8AC6 /* mavfilms */,
+				F05FE72825A55C0B0031F8E8 /* mavfilmsTests */,
 				F0696FA1259CF262005B8AC6 /* Products */,
 				C729EFF81D276660EF9EA4C4 /* Pods */,
 				F6603313D37875929FEFC371 /* Frameworks */,
@@ -77,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				F0696FA0259CF262005B8AC6 /* mavfilms.app */,
+				F05FE72725A55C0B0031F8E8 /* mavfilmsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -96,6 +143,8 @@
 				F0696FAE259CF263005B8AC6 /* LaunchScreen.storyboard */,
 				F0696FB1259CF263005B8AC6 /* Info.plist */,
 				F0696FD5259D1A0D005B8AC6 /* UIView+Extension.swift */,
+				F05FE73725A561440031F8E8 /* MockFilmData.json */,
+				F05FE74B25A5689A0031F8E8 /* MockFilmDetails.json */,
 			);
 			path = mavfilms;
 			sourceTree = "<group>";
@@ -120,6 +169,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		F05FE72625A55C0B0031F8E8 /* mavfilmsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F05FE73025A55C0B0031F8E8 /* Build configuration list for PBXNativeTarget "mavfilmsTests" */;
+			buildPhases = (
+				F05FE72325A55C0B0031F8E8 /* Sources */,
+				F05FE72425A55C0B0031F8E8 /* Frameworks */,
+				F05FE72525A55C0B0031F8E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F05FE72D25A55C0B0031F8E8 /* PBXTargetDependency */,
+			);
+			name = mavfilmsTests;
+			productName = mavfilmsTests;
+			productReference = F05FE72725A55C0B0031F8E8 /* mavfilmsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		F0696F9F259CF262005B8AC6 /* mavfilms */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F0696FB4259CF263005B8AC6 /* Build configuration list for PBXNativeTarget "mavfilms" */;
@@ -148,6 +215,10 @@
 				LastSwiftUpdateCheck = 1220;
 				LastUpgradeCheck = 1220;
 				TargetAttributes = {
+					F05FE72625A55C0B0031F8E8 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = F0696F9F259CF262005B8AC6;
+					};
 					F0696F9F259CF262005B8AC6 = {
 						CreatedOnToolsVersion = 12.2;
 					};
@@ -167,16 +238,28 @@
 			projectRoot = "";
 			targets = (
 				F0696F9F259CF262005B8AC6 /* mavfilms */,
+				F05FE72625A55C0B0031F8E8 /* mavfilmsTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F05FE72525A55C0B0031F8E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F05FE74325A567B20031F8E8 /* MockFilmData.json in Resources */,
+				F05FE74D25A5689A0031F8E8 /* MockFilmDetails.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F0696F9E259CF262005B8AC6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F0696FB0259CF263005B8AC6 /* LaunchScreen.storyboard in Resources */,
+				F05FE74825A567B50031F8E8 /* MockFilmData.json in Resources */,
+				F05FE74C25A5689A0031F8E8 /* MockFilmDetails.json in Resources */,
 				F0696FAD259CF263005B8AC6 /* Assets.xcassets in Resources */,
 				F0696FAB259CF262005B8AC6 /* Main.storyboard in Resources */,
 			);
@@ -227,6 +310,17 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F05FE72325A55C0B0031F8E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F05FE73E25A563B20031F8E8 /* FilmDetailsViewControllerTests.swift in Sources */,
+				F05FE75525A5692B0031F8E8 /* WebserviceClassTests.swift in Sources */,
+				F05FE73425A55D3C0031F8E8 /* FilmListViewControllerTests.swift in Sources */,
+				F05FE72A25A55C0B0031F8E8 /* mavfilmsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F0696F9C259CF262005B8AC6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -244,6 +338,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F05FE72D25A55C0B0031F8E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F0696F9F259CF262005B8AC6 /* mavfilms */;
+			targetProxy = F05FE72C25A55C0B0031F8E8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F0696FA9259CF262005B8AC6 /* Main.storyboard */ = {
@@ -265,6 +367,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		F05FE72E25A55C0B0031F8E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 59K34DD24Q;
+				INFOPLIST_FILE = mavfilmsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.apps.mavfilmsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mavfilms.app/mavfilms";
+			};
+			name = Debug;
+		};
+		F05FE72F25A55C0B0031F8E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 59K34DD24Q;
+				INFOPLIST_FILE = mavfilmsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.apps.mavfilmsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mavfilms.app/mavfilms";
+			};
+			name = Release;
+		};
 		F0696FB2259CF263005B8AC6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -389,6 +531,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59K34DD24Q;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				INFOPLIST_FILE = mavfilms/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -409,6 +552,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59K34DD24Q;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				INFOPLIST_FILE = mavfilms/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -424,6 +568,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F05FE73025A55C0B0031F8E8 /* Build configuration list for PBXNativeTarget "mavfilmsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F05FE72E25A55C0B0031F8E8 /* Debug */,
+				F05FE72F25A55C0B0031F8E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F0696F9B259CF262005B8AC6 /* Build configuration list for PBXProject "mavfilms" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -55,7 +55,7 @@ class FilmListViewController: UIViewController {
         
         MBProgressHUD.showAdded(to: KeyWindow.windowView!, animated: true)
         
-        WebserviceClass.sharedAPI.performRequest(type: FilmModel.self, urlString: ApiEndPoint.FilmList.rawValue + search, methodType:  HTTPMethod.get, success: { [weak self] (response) in
+        WebserviceClass.sharedAPI.performRequest(type: FilmModel.self, urlString: ApiEndPoint.FilmList.rawValue + search, success: { [weak self] (response) in
             self?.filmModel = response
             self?.collectionView.reloadData()
             MBProgressHUD.hide(for: KeyWindow.windowView!, animated: true)
@@ -110,11 +110,14 @@ extension FilmListViewController: UISearchBarDelegate {
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         NSObject.cancelPreviousPerformRequests(withTarget: self, selector: #selector(FilmListViewController.reload), object: nil)
-        self.perform(#selector(FilmListViewController.reload), with: nil, afterDelay: 0.5)
+        self.perform(#selector(FilmListViewController.reload(_:)), with: searchBar.text, afterDelay: 0.5)
     }
         
-    @objc func reload() {
-        guard let searchText = searchBar.text else { return }
+    @objc func reload(_ searchText: String) {
+        guard searchBar != nil else {
+            return
+        }
+//        guard let searchText = searchText else { return }
         if searchText.count == 0{
             getFilmList(defaultSearchFilms)
         } else {

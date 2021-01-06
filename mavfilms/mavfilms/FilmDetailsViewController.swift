@@ -36,17 +36,15 @@ class FilmDetailsViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        self.getFilmDetails(searchedFilm!)
+        self.getFilmDetails(searchedFilm?.imdbID ?? "")
         
     }
     
-    func getFilmDetails(_ film: Search) {
-        
-        let imdbID = film.imdbID ?? ""
-        
+    func getFilmDetails(_ imdbID: String) {
+                
         MBProgressHUD.showAdded(to: KeyWindow.windowView!, animated: true)
         
-        WebserviceClass.sharedAPI.performRequest(type: FilmDetailsModel.self, urlString: ApiEndPoint.FilmDetails.rawValue + imdbID, methodType: HTTPMethod.get, success: { [weak self] (response) in
+        WebserviceClass.sharedAPI.performRequest(type: FilmDetailsModel.self, urlString: ApiEndPoint.FilmDetails.rawValue + imdbID, success: { [weak self] (response) in
             
             MBProgressHUD.hide(for: KeyWindow.windowView!, animated: true)
 

@@ -15,7 +15,7 @@ class WebserviceClass {
     
     typealias Response<T> = (_ result: AFDataResponse<T>) -> Void
        
-    func performRequest <T:Codable>(type: T.Type, urlString:String, methodType: HTTPMethod, success:@escaping ((T) -> Void), failure: @escaping ((T) -> Void)) -> Void {
+    func performRequest <T:Codable>(type: T.Type, urlString:String, success:@escaping ((T) -> Void), failure: @escaping ((T) -> Void)) -> Void {
                         
         print("**************************")
         
@@ -25,7 +25,7 @@ class WebserviceClass {
             
         let url = URL(string: urlString)!
         var request = URLRequest(url: url)
-        request.httpMethod = methodType.rawValue
+        request.httpMethod = HTTPMethod.get.rawValue
         request.setValue("application/json; charset=UTF-8", forHTTPHeaderField: "Content-Type")
         
         AF.request(request).responseString { response in
